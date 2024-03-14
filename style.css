@@ -4,8 +4,18 @@ body
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
+li
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
 :root
 {
     --main-text-color:#123;
@@ -49,12 +59,45 @@ header
     grid-area: h;
     background-color: white;
 }
+
+
+
+header ul 
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_search
+{
+    
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+header a:hover
+{
+    background-color: #D5F0FF;
+}
+header
 aside{grid-area: a;}
 main
 {
     grid-area: m;
     background-color: #508E9D;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .box1{grid-area: b1;}
 .box2{grid-area: b2;}
