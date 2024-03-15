@@ -98,7 +98,7 @@ main
     background-color: #508E9D;
     color: white;
     font-family: var(--main-fontfamilytext);
-    font-size: 30px;   
+    font-size: 25px;   
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
@@ -157,6 +157,21 @@ main
 .big_box{grid-area: bb;}
 footer
 {
+    display: flex;
     grid-area: f;
     background-color: #FDCEDF;
+    background: linear-gradient(to left, #F7B0D2, #508E9D);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+footer h1{
+    font-size: 20px;
+}
+.social-links{
+    text-align: center;
+}
+.social-links a:hover{
+    color: rgb(255, 127, 127);
 }
