@@ -1,6 +1,5 @@
 body
 {
-    scroll-behavior: smooth;
     background-color: #D5F0FF;
     padding: 0;
     margin: 0;
@@ -63,8 +62,9 @@ header,main,.info_section,.box1,.box2,.box3,.box4,.box5,.box6,.box7,.big_box,foo
 
 header
 {
+    border: none;
     grid-area: h;
-    background-color: #FEECE2;
+    background: #ffffff;
 }
 
 
@@ -77,18 +77,16 @@ header ul
 
 .nav_search
 {
-    
     font-size: var(--main-fontsize);
-    margin: 10px;
     padding: 10px;
-    border: var(--main-borderdiv);
-    border-radius: var(--main-borderlinks);
-    transition: 0.3s;
+    border-radius: 20px;
+    transition: 0.5s;
 }
 
 header a:hover
 {
-    background-color: #D5F0FF;
+    
+    background: linear-gradient(to left, #F7B0D2, #508E9D);
     color: white;
 }
 header
@@ -155,7 +153,48 @@ main
 .box5{grid-area: b5;}
 .box6{grid-area: b6;}
 .box7{grid-area: b7;}
-.big_box{grid-area: bb;}
+.big_box{
+    grid-area: bb;
+    display: flex;
+    margin: 0;
+    border: none;
+}
+.big_box div 
+{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.big_box img
+{
+    width: 100%;
+   
+}
+
+.botao_vakinha
+{
+    background-color: #ED6D6A;
+    transition: 1s;
+    text-align: center;
+}
+.botao_vakinha a
+{
+    background-color: #fff;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all linear 0.3s;
+}
+.botao_vakinha a:hover{
+    
+    color:#ED6D6A;
+    background-color: #e6e4e4;
+    
+}
+
 footer
 {
     display: flex;
@@ -170,18 +209,15 @@ footer
 footer h1{
     font-size: 20px;
 }
-
-.footer_links p
-{
-    margin: 5px;
-}
-.footer_links li p:hover
-{
-    color: white;
-}
 .social-links{
     text-align: center;
 }
 .social-links a:hover{
     color: rgb(255, 127, 127);
+}
+.Criadores a:hover{
+    text-decoration: underline;
+}
+.Criadores a:hover{
+color: rgb(221, 221, 221);
 }
