@@ -1,5 +1,6 @@
 body
 {
+    scroll-behavior: smooth;
     background-color: #D5F0FF;
     padding: 0;
     margin: 0;
@@ -63,7 +64,7 @@ header,main,.info_section,.box1,.box2,.box3,.box4,.box5,.box6,.box7,.big_box,foo
 header
 {
     grid-area: h;
-    background-color: #f7ede2;
+    background-color: #FEECE2;
 }
 
 
@@ -95,7 +96,7 @@ aside{grid-area: a;}
 main
 {
     grid-area: m;
-    background-color: #508E9D;
+    background: linear-gradient(to left, #F7B0D2, #508E9D);
     color: white;
     font-family: var(--main-fontfamilytext);
     font-size: 25px;   
@@ -168,6 +169,15 @@ footer
 }
 footer h1{
     font-size: 20px;
+}
+
+.footer_links p
+{
+    margin: 5px;
+}
+.footer_links li p:hover
+{
+    color: white;
 }
 .social-links{
     text-align: center;
