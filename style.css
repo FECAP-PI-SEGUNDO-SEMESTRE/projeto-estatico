@@ -83,6 +83,17 @@ header ul
     transition: 0.5s;
 }
 
+.nav_search img
+{
+    width: 100px;
+}
+
+.foto_nav:hover
+{
+    background: none;
+    background-color: #e6e4e4;
+    
+}
 header a:hover
 {
     
@@ -137,13 +148,14 @@ main
 {
     margin-top: 5%;
     border-radius: var(--main-borderimages);
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    
 }
 
 .box_foto2
 {
     background-image: url(Assets/LogoOng.png);
+    
     
 }
 .box1{grid-area: b1;}
@@ -220,4 +232,12 @@ footer h1{
 }
 .Criadores a:hover{
 color: rgb(221, 221, 221);
+}
+.Parcerias h2{
+    text-align: center;
+    font-size: 20px;
+}
+.Parcerias a:hover{
+    color:  rgb(221, 221, 221);
+    text-decoration: underline;
 }
