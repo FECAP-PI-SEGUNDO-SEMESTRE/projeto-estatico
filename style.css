@@ -7,6 +7,10 @@ body
     color: #333;
 }
 
+*
+{
+    scroll-behavior: smooth;
+}
 li
 {
     list-style-type: none;
@@ -65,6 +69,7 @@ header
     border: none;
     grid-area: h;
     background: #ffffff;
+    
 }
 
 
@@ -114,6 +119,7 @@ main
     justify-content: space-around;
     align-items: center;
     padding: var(--main-padding);
+    border: none;
 }
 
 .info_section
