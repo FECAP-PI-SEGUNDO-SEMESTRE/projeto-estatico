@@ -148,7 +148,8 @@ main
 {
     margin-top: 5%;
     border-radius: var(--main-borderimages);
-    width: 100%;
+    width: 90%;
+    height: 80%;
     
 }
 
@@ -214,30 +215,23 @@ footer
     background-color: #FDCEDF;
     background: linear-gradient(to left, #F7B0D2, #508E9D);
     justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    
+    align-items: start;  
 }
-footer h1{
-    font-size: 20px;
+
+.footer_list
+{
+    font-size: 15px;
+    text-align: justify;
 }
-.social-links{
-    text-align: center;
+
+.footer_list p
+{
+    margin: 7px;
 }
-.social-links a:hover{
-    color: rgb(255, 127, 127);
-}
-.Criadores a:hover{
+
+.footer_list p:hover
+{
+    color: white;
     text-decoration: underline;
 }
-.Criadores a:hover{
-color: rgb(221, 221, 221);
-}
-.Parcerias h2{
-    text-align: center;
-    font-size: 20px;
-}
-.Parcerias a:hover{
-    color:  rgb(221, 221, 221);
-    text-decoration: underline;
-}
+
