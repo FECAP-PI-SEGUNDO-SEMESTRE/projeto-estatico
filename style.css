@@ -31,15 +31,13 @@ a
     --main-borderimages:5px;
     --main-fontfamilytext: "Josefin Sans", sans-serif;
 }
-.container
-{
-    
+.container {
     display: grid;
-    gap:20px;
-    width: 70%;
-    height: 200vh;  
+    gap: 20px;
+    width: 75%;
+    height: 200vh;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /* Alterando o número de colunas para 4 */
     grid-template-rows: 0.2fr 0.7fr 0.1fr 1fr 0.8fr 1fr 0.5fr 0.3fr;
     grid-template-areas: 
         "h h h h"
@@ -49,9 +47,7 @@ a
         "b3 b3 b4 b4"
         "b5 b6 b6 b7"
         "bb bb bb bb"
-        "f f f f"
-    
-  
+        "f f f f";   
 }
 
 header,main,.info_section,.box1,.box2,.box3,.box4,.box5,.box6,.box7,.big_box,footer
@@ -78,6 +74,7 @@ header ul
 {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .nav_search
@@ -143,9 +140,10 @@ main
 
 .box_foto1
 {
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-size: var(--main-fontsize);
     border: var(--main-borderdiv);
@@ -159,12 +157,41 @@ main
     
 }
 
-.box_foto2
-{
-    background-image: url(Assets/LogoOng.png);
-    
-    
+
+.box_foto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
 }
+
+.box_foto2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.link_box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: var(--main-borderlinks);
+    background-color: #F7B0D2;
+}
+
+/* Adicionando flex-grow para as divs box_foto2 */
+.box6, .box7 {
+    flex-grow: 1;
+}
+
+
 .box1{grid-area: b1;}
 .box2{grid-area: b2;}
 .box3{grid-area: b3;}

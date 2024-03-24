@@ -130,9 +130,7 @@ main
     align-items: center;
     border: none;
 }
-.info_section, h1, p{
-  
-}
+
 .info_section a
 {
     font-family: var(--main-fontfamilytext);
