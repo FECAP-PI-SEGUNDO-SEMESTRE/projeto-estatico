@@ -1,0 +1,171 @@
+body
+{
+    background-color: #D5F0FF;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+
+*{scroll-behavior: smooth;}
+
+li{list-style-type: none;}
+
+a{text-decoration: none;}
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    justify-self: flex-start;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding:10px 50px;
+}
+.menu ul li {margin-right: 20px;}
+.menu li:first-child {margin-left: 450px;}
+
+
+.perfil-bd img{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li
+{
+    padding: 10px;
+    transition: 0.5s;
+}
+
+nav img
+{
+    width: 100px;
+}
+
+.titulo
+{
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background: linear-gradient(to left, #F7B0D2, #508E9D);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main img{
+    border-radius: 15px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec1
+{
+    display:flex;
+    justify-content: space-around;
+}
+.sec2
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.conteudo img{border-radius: 20px;}
+
+.conteudo p
+{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+button
+{
+    cursor: pointer; 
+    padding: 3px 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: #508E9D;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+button a
+{
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all linear 0.3s;
+}
+button a:hover
+{
+    color:#508E9D;
+    background-color: #e6e4e4;
+    
+}
+
+.vakinha{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e4e4;
+}
+.vakinha button{
+    margin-left: 250px;
+}
+footer
+{
+    display: flex;
+    background-color: #FDCEDF;
+    background: linear-gradient(to left, #F7B0D2, #508E9D);
+    justify-content: space-around;
+    align-items: start;  
+}
+
+.footer_list
+{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.footer_list p
+{
+    margin: 7px;
+}
+
+.footer_list p:hover
+{
+    color: white;
+    text-decoration: underline;
+}
