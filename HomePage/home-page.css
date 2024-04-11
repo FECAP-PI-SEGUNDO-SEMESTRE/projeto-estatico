@@ -1,6 +1,7 @@
 body
 {
     background-color: #D5F0FF;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +9,8 @@ body
     text-align: center;
 }
 
-
+.container{height: auto;}
+    
 *{scroll-behavior: smooth;}
 
 li{list-style-type: none;}
@@ -20,6 +22,7 @@ a{text-decoration: none;}
     margin:auto;
     display: flex;
     flex-direction: column;
+
 }
 
 .logo{
@@ -62,7 +65,7 @@ nav img
 
 .titulo
 {
-    margin-bottom: 35px;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +79,7 @@ nav img
 main img{
     border-radius: 15px;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 }
 
 h1{
@@ -93,13 +96,19 @@ h1{
 {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 5%;
 }
-.conteudo img{border-radius: 20px;}
+
+
+.conteudo img
+{
+    
+    border-radius: 20px;
+}
 
 .conteudo p
 {
-    font-size: 18px;
+    font-size: 1.2em;
     text-align: left;
     margin-left: 100px;
     margin-right: 100px;
@@ -142,7 +151,7 @@ button a:hover
     background-color: #e6e4e4;
 }
 .vakinha button{
-    margin-left: 250px;
+    margin-right: 200px;
 }
 footer
 {
@@ -169,3 +178,79 @@ footer
     color: white;
     text-decoration: underline;
 }
+
+@media (max-width: 800px) 
+{
+    .container{height: auto;}
+    img
+    {
+        width: 100%;
+    }
+    button
+    {
+        margin: 5px;
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .menu-items{justify-content: center;}
+    .menu-items ul{ margin: 0 auto;}
+    
+    .menu li {
+        margin-right: 0;
+        border: 1px solid inherit;
+        background-color: #D5F0FF;
+        border-radius: 20px;
+      }
+    .nav_img{display: none;}
+      
+    .menu li:first-child {
+        margin-left: 0; /* Remove margin from first menu item */
+      }
+    
+    nav img {width: 50px;}
+    
+    .perfil-bd{display: none;}
+
+    .conteudo{margin-bottom: 10px;}
+    .conteudo p{text-align:justify; font-size: 20px;}
+    main img
+    {
+
+        justify-content: center;
+        align-items: center;
+    }
+    .container
+    {
+        min-width: auto;
+    }  
+    .sec1, .sec2
+    {
+        flex-direction: column;
+    }  
+
+    .vakinha
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .vakinha button{margin: auto;}
+    
+    .vakinha img{width: 100%;}
+    
+    footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+}
+
+
