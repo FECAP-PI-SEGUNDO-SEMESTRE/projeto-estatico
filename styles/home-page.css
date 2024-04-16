@@ -9,6 +9,11 @@ body
     text-align: center;
 }
 
+:root
+{
+    --main-gradiente: linear-gradient(to left, #F7B0D2, #508E9D);
+}
+
 .container{height: auto;}
     
 *{scroll-behavior: smooth;}
@@ -36,9 +41,19 @@ a{text-decoration: none;}
     background: #ffffff;
     padding:10px 50px;
 }
-.menu ul li {margin-right: 20px;}
+.menu ul li 
+{
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;    
+}
 .menu li:first-child {margin-left: 450px;}
 
+.menu ul li:hover
+{
+    border: 1px solid inherit;
+    background: var(--main-gradiente);
+}
 
 .perfil-bd img{
     display: flex;
@@ -71,9 +86,10 @@ nav img
     justify-content: center;
     align-items: center;
     font-size: 70px;
-    background: linear-gradient(to left, #F7B0D2, #508E9D);
+    background: var(--main-gradiente);
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
 }
 
 main img{
@@ -153,6 +169,8 @@ button a:hover
 .vakinha button{
     margin-right: 200px;
 }
+
+.vakinha img{height: 100%;}
 footer
 {
     display: flex;
@@ -178,6 +196,8 @@ footer
     color: white;
     text-decoration: underline;
 }
+
+.footer_list ul li{color: black;}
 
 @media (max-width: 800px) 
 {
