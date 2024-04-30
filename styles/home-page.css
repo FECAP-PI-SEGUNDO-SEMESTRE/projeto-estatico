@@ -1,6 +1,6 @@
 body
 {
-    background-color: #D5F0FF;
+    background-color: #ffffff;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -9,17 +9,17 @@ body
     text-align: center;
 }
 
-:root
-{
-    --main-gradiente: linear-gradient(to left, #F7B0D2, #508E9D);
+:root{--main-gradiente: linear-gradient(to left, #F7B0D2, #508E9D);}
+
+.container{
+    background-color: #D5F0FF;
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
 }
 
-.container{height: auto;}
-    
-*{scroll-behavior: smooth;}
-
-li{list-style-type: none;}
-
+*{scroll-behavior: smooth;} 
+li{list-style: none;}
 a{text-decoration: none;}
 
 .container{
@@ -30,6 +30,7 @@ a{text-decoration: none;}
 
 }
 
+/* HEADER */
 .logo{
     display: flex;
     justify-self: flex-start;
@@ -41,97 +42,128 @@ a{text-decoration: none;}
     background: #ffffff;
     padding:10px 50px;
 }
-.menu ul li 
-{
-    margin-right: 20px;
+
+.menu li:first-child {margin-left: 450px;}
+.menu-items a
+{   
     padding: 10px;
+    color: #333;
+    background-color: #d5f0ff;
+    margin-right: 20px;
     border-radius: 20px;    
 }
-.menu li:first-child {margin-left: 450px;}
 
-.menu ul li:hover
+.menu-items a:hover
 {
-    border: 1px solid inherit;
-    background: var(--main-gradiente);
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    background-color: #F7B0D2;
 }
 
-.perfil-bd img{
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
-}
+.perfil-bd img{border-radius: 50%;}
 
-header ul
-{
+header ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-nav ul li
-{
+nav ul li{
     padding: 10px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
-nav img
-{
-    width: 100px;
+nav img{
+    width: 95px;
 }
 
-.titulo
-{
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: column;
+/* TÍTULO DO MAIN */
+.titulo{
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
     background: var(--main-gradiente);
-    color: white;
+    color: #edfbff;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
 }
 
+/* IMAGEM DO MAIN  */
 main img{
-    border-radius: 15px;
-    display: flex;
-    margin-bottom: 3%;
+    border-radius: 26px;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
+/* SUBTÍTULOS */
 h1{
+    color: #508E9D;
+    text-align: center;
     font-size: 35px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.sec1
-{
+/* SOBRE A ONG + COMO AJUDAR */
+.sec1{
     display:flex;
     justify-content: space-around;
+    
 }
-.sec2
-{
+.sec2{
     display: flex;
     justify-content: space-around;
     margin: 5%;
 }
 
 
-.conteudo img
-{
-    
+.conteudo img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 20px;
 }
 
-.conteudo p
-{
+.conteudo p{
     font-size: 1.2em;
     text-align: left;
     margin-left: 100px;
     margin-right: 100px;
 }
 
-button
-{
+/* BAZAR + DENUNCIE */
+.bazar{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.bazar img{
+    height: 500px;
+    border-radius: 26px;
+}
+
+/* VAKINHA */
+.vakinha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.vakinha button{
+    margin-right: 190px;
+}
+
+.vakinha img{height: 350px;}
+ 
+/* BOTÕES */
+
+button{
     cursor: pointer; 
     padding: 3px 10px;
     border-radius: 5px;
@@ -159,18 +191,7 @@ button a:hover
     
 }
 
-.vakinha{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e6e4e4;
-}
-.vakinha button{
-    margin-right: 200px;
-}
-
-.vakinha img{height: 100%;}
+/* FOOTER */
 footer
 {
     display: flex;
@@ -198,6 +219,8 @@ footer
 }
 
 .footer_list ul li{color: black;}
+
+/* RESPONSIVIDADE */
 
 @media (max-width: 800px) 
 {
