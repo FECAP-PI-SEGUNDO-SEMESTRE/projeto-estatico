@@ -155,11 +155,22 @@ h1{
     align-items: center;
     background-color: #fff;
 }
-.vakinha button{
-    margin-right: 190px;
+
+.vakinhaImg,.vakinhaButton{flex: 1;}
+.vakinhaImg{
+    width: 100%;
 }
 
-.vakinha img{height: 350px;}
+.vakinhaImg img{width: 100%;}
+
+.vakinhaButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
  
 /* BOTÕES */
 
@@ -277,16 +288,9 @@ footer
         flex-direction: column;
     }  
 
-    .vakinha
-    {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .vakinha button{margin: auto;}
+
     
-    .vakinha img{width: 100%;}
-    
+
     footer
     {
         flex-direction: column;

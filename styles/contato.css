@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a{text-decoration: none;}
+
+body{
+    background-color: #D5F0FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+
+}
+
+nav{background-color: #fff;}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+li:hover{background-color: #D5F0FF;}
+
+.HeaderTema{
+    display: flex;
+    background-color: #508E9D;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.HeaderImg{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.HeaderImg img{
+    width: 80%;
+}
+.HeaderText{
+    flex: 7;
+    font-size: 4em;
+    text-wrap: nowrap;
+    color: white;
+}
+
+.RedesSociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+.MainImages{
+    display: flex;
+}
+.MainImg{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainImg img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.SocialMediaArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 60%;
+    font-size: 2.5em;
+    margin-top: 2%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3% auto;
+}
+
+#MainImg1{background-color:#3b5998;}
+#MainImg2{background-color:#eea9ca;}
+.SocialMediaImg{width: 100%;}
+.SocialMediaImg img{width: 80%;}
+
+.SectionForm{
+    background-color: #BDE3FF;   
+}
+
+.SectionForm {
+    text-align: center;
+    padding: 20px;
+}
+
+.FormularioDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.FormularioDiv input[type="text"],
+.FormularioDiv input[type="email"],
+.FormularioDiv textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.FormularioDiv textarea {
+    height: 150px;
+}
+
+.FormularioDiv input[type="button"] {
+    background-color: #FF007F;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.FormularioDiv input[type="button"]:hover {
+    background-color: #FFC0CB;
+}
+
+.FormularioDiv p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap; /* Adicionando flex-wrap para garantir o ajuste responsivo */
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #FDCEDF;
+    background: linear-gradient(to left, #F7B0D2, #508E9D);
+}
+
+.footer_list {
+    flex: 1;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centralizando os itens verticalmente */
+    margin: 20px; /* Espaçamento entre as colunas de itens do footer */
+}
+
+.footer_list ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; /* Removendo marcadores de lista */
+    padding: 10px; /* Removendo o preenchimento padrão */
+}
+
+.footer_list ul li {
+    color: black;
+    padding: 10px;
+}
+
+.footer_list p {
+    margin: 0px;
+}
+
+.footer_list p:hover {
+    color: white;
+    text-decoration: underline;
+}
