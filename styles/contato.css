@@ -5,11 +5,14 @@
     list-style-type: none;
 }
 
+:root{--main-gradiente: linear-gradient(to left, #F7B0D2, #508E9D);}
+li{list-style: none;}
 a{text-decoration: none;}
 
 body{
-    background-color: #D5F0FF;
+    background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
 .container{
@@ -17,26 +20,78 @@ body{
     flex-direction: column;
     margin: 0 auto;
     max-width: 1200px;
-    width: 80%;
+    width: 90%;
 
 }
 
-nav{background-color: #fff;}
-ul{
+/* Estilização do nav */
+nav {
     display: flex;
-    justify-content: center;
+}
+
+/* Estilos para a parte esquerda do nav */
+.nav_esquerda, .nav_direita {
+    flex: 1;
+    display: flex;
     align-items: center;
 }
 
-li{
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    transition: 0.2s;
+/* Estilização do logo */
+.logo img {
+    width: 100%; /* Ajuste para ocupar toda a largura da div */
 }
 
-li:hover{background-color: #D5F0FF;}
+.logo{margin-left: 5%;}
+.nav_esquerda img{
+    width: 40%;
+}
+/* Estilos para a parte direita do nav */
+.nav_direita {
+    justify-content: flex-end;
+}
+
+
+/* Estilos para a lista de itens de menu */
+.nav_direita ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav_direita a{text-decoration: none; color: inherit;}
+/* Estilos para os itens da lista de menu */
+.nav_direita li {
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.nav_direita li:hover{
+    background-color: #eea9ca;
+    color: #fff;
+}
+
+.nav_direita img {width: 74px;}
+/* Estilização da imagem dentro do item de menu */
+
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    font-size: 50px;
+    font-weight: bold;
+    background: var(--main-gradiente);
+    color: #edfbff;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
 
 .HeaderTema{
     display: flex;
@@ -46,14 +101,7 @@ li:hover{background-color: #D5F0FF;}
     padding: 20px;
 }
 
-.HeaderImg{
-    flex: 3;
-    display: flex;
-    justify-content: center;
-}
-.HeaderImg img{
-    width: 80%;
-}
+
 .HeaderText{
     flex: 7;
     font-size: 4em;
