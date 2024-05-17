@@ -35,6 +35,7 @@ a{text-decoration: none;}
 .logo{
     display: flex;
     justify-self: flex-start;
+    align-items: center;
 }
 
 .menu{
@@ -45,6 +46,8 @@ a{text-decoration: none;}
 }
 
 .menu li:first-child {margin-left: 450px;}
+
+
 .menu-items a
 {   
     padding: 10px;
