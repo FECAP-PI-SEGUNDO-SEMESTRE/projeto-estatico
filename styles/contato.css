@@ -9,76 +9,65 @@
 li{list-style: none;}
 a{text-decoration: none;}
 
-body{
-    background-color: #fff;
+body
+{
+    background-image: url('../Assets/bg-img-5.jpeg');
+    /* background-size: cover; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
+    text-align: center;
 }
-
 .container{
+    background-color: #D5F0FF;
+    max-width: 70%;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-
 }
 
-/* Estilização do nav */
-nav {
+.menu{
     display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding:10px 50px;
 }
 
-/* Estilos para a parte esquerda do nav */
-.nav_esquerda, .nav_direita {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-/* Estilização do logo */
-.logo img {
-    width: 100%; /* Ajuste para ocupar toda a largura da div */
-}
-
-.logo{margin-left: 5%;}
-.nav_esquerda img{
-    width: 40%;
-}
-/* Estilos para a parte direita do nav */
-.nav_direita {
-    justify-content: flex-end;
-}
+.menu li:first-child {margin-left: 450px;}
 
 
-/* Estilos para a lista de itens de menu */
-.nav_direita ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-}
-
-.nav_direita a{text-decoration: none; color: inherit;}
-/* Estilos para os itens da lista de menu */
-.nav_direita li {
+.menu-items a
+{   
     padding: 10px;
+    color: #333;
+    background-color: #d5f0ff;
+    margin-right: 20px;
+    border-radius: 20px;    
+}
+
+.menu-items a:hover
+{
+    padding: 10px;
+    color: white;
     border-radius: 20px;
-    margin: 5px;
-    transition: 0.3s;
+    background-color: #F7B0D2;
 }
 
-.nav_direita li:hover{
-    background-color: #eea9ca;
-    color: #fff;
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    padding: 10px;
+    /* transition: 0.5s; */
 }
 
-.nav_direita img {width: 74px;}
-/* Estilização da imagem dentro do item de menu */
-
-
+nav img{
+    width: 95px;
+}
 
 .titulo{
     display: flex;
@@ -93,23 +82,58 @@ nav {
     text-transform: uppercase;
 }
 
-.HeaderTema{
+.formContainer{
     display: flex;
+    padding: 50px 20px;
+    margin: auto;
+}
+
+h1{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    color: #508E9D;
+    text-align: center;
+    font-size: 200%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    margin: 0 auto 20px auto;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:none;
     background-color: #508E9D;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    color: #ffffff;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    padding: 8px;
+    &:hover{
+        color:#508E9D;
+        background-color: #fff;
+    }
 }
 
-
-.HeaderText{
-    flex: 7;
-    font-size: 4em;
-    text-wrap: nowrap;
-    color: white;
+.formImg{
+    margin: 1em;
+    width: 450px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid #508E9D;
 }
-
-.RedesSociais{
+/* .RedesSociais{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +225,7 @@ nav {
 .FormularioDiv p {
     text-align: left;
     margin-bottom: 5px;
-}
+} */
 
 footer {
     display: flex;
